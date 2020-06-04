@@ -11,7 +11,10 @@ z = "I like turtles!"
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
+print("%d divided by 4.25 is around %d and, %s" % (x ,y, z))
 
 # Use the 'format' string method to print the same thing
+print("The number {} is not {}, but {}" .format(x, y, z))
 
 # Finally, print the same thing using an f-string
+print(f'5 multiplied by 2 is {x}, not {y}, but {z}')
