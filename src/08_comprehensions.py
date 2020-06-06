@@ -39,7 +39,7 @@ print(x)
 #evens = [num for num in x if num % 2 == 0]
 #print(evens)
 
-# What do you need between the square brackets to make it work?
-y = [value for value in x if int(value) % 2 == 0]
+# What do you need between the square brackets to make it work? Pulls out the even numbers, from previous function.
+y = [int(value) for value in x if int(value) % 2 == 0]
 
 print(y)
