@@ -3,7 +3,7 @@ Dictionaries are Python's implementation of associative arrays.
 There's not much different with Python's version compared to what
 you'll find in other languages (though you can also initialize and
 populate dictionaries using comprehensions just like you can with
-lists!).
+lists!). Dictionaries are a set of key:value pairs with key unique.
 
 The docs can be found here:
 https://docs.python.org/3/tutorial/datastructures.html#dictionaries
@@ -35,8 +35,8 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-waypoints = [{"lat": 42, "lon": -120, "name": "made up place"}]
-print(waypoints)
+new_waypoints = [{"lat": 42, "lon": -120, "name": "made up place"}]
+print(new_waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
@@ -44,7 +44,18 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
+mod_waypoints = [{"lon:": -130, "name": "a place"}] 
+print(mod_waypoints)
 
+no_place = "not a real place"
+for lon, name in no_place:
+    print(f'{lon} : {name}')
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+total_waypoints = 0
+
+for lat, lon, name in dict.items(lat, lon, name):
+    print(f'{lat} : {lon} : {name}')
+
+# x = waypoints.get("lat", "lon", "name")
