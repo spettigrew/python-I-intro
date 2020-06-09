@@ -15,7 +15,7 @@ has the following keys:
  - name: a name string for this location
 """
 
-waypoints = [
+waypoints = [ # (waypoints is a list) a list of dictionaries vs. JS an array of objects. Instead of an object in JS, it's a dictionary.
     {
         "lat": 43,
         "lon": -121,
@@ -32,6 +32,18 @@ waypoints = [
         "name": "a third place"
     }
 ]
+# [1, 2, 3, 4, 5]
+# array = [1, 2, 3, 4, 5]
+# array[1] #reference value. Calling index of 1 to get number 2. 
+# print(array[1])
+
+# integer = 0 #assign a variable to a value
+# block = {
+#         "lat": 43,
+#         "lon": -122,
+#         "name": "a third place"
+#     }
+# print(block["lat"])
 
 # Add a new waypoint to the list - by using append(). Waypoints is the dictionary itself. Inside is the lists or values in the dictionary.
 # YOUR CODE HERE
@@ -44,21 +56,17 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
-waypoints.insert(0,{"lon:": -130, "name": "not a place"})
-print(waypoints)
+waypoints[0] = {"lon:": -130, "name": "not a place"}
+print(waypoints[0])
 
-# waypoints["lon": -121, "name": "a place"] = {"lon": -130, "name": "not a place"}
-# print(waypoints)
-
-# no_place = "not a real place"
-# for lon, name in no_place:
-#     print(f'{lon} : {name}')
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
-total_waypoints = 0
+# total_waypoints = 0
+#for lat, lon, name in waypoints.values():
 
-for lat, lon, name in dict.items(lat, lon, name):
-    print(f'{lat} : {lon} : {name}')
+for values in waypoints:
+    print(waypoints)
 
-# x = waypoints.get("lat", "lon", "name")
+# for waypoints.values(["lat", "lon", "name"]):
+# print(f'{lat} : {lon} : {name}')
