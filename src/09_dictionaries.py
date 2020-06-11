@@ -62,6 +62,11 @@ print(waypoints[0])
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+# values = waypoints.values()
+# values
+
+# for value in waypoints.values():
+#     print(value)
 # total_waypoints = 0
 #for lat, lon, name in waypoints.values():
 

@@ -5,7 +5,11 @@
 # the sum. This is what you'd consider to be a regular, normal function.
 
 # YOUR CODE HERE
-
+def f1(*integers):
+    result = 0
+    for x in integers:
+        result += x
+    return result
 print(f1(1, 2))
 
 # Write a function f2 that takes any number of integer arguments and returns the
